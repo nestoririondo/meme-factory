@@ -44,6 +44,8 @@ const Home = () => {
       }
       setCurrentMeme(memes[memes.indexOf(currentMeme) - 1]);
     }
+    setFirstLine("");
+    setSecondLine("");
   };
 
   const handleFileUpload = (event) => {
@@ -127,7 +129,9 @@ const Home = () => {
           />
           <button type="submit">Submit</button>
         </form>
-        <button value="Reset" id="btnReset" onClick={handleReset}>Reset</button>
+        <button value="Reset" id="btnReset" onClick={handleReset}>
+          Reset
+        </button>
       </div>
     </>
   );
